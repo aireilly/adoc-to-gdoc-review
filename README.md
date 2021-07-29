@@ -1,6 +1,6 @@
 # gdoc-review
 
-`gdoc-review` is a simple script utility that utilizes pandoc and gdrive tools to generate a google doc direct from a local asciidoc file.
+`gdoc-review` is a simple script utility that utilizes `pandoc` and `gdrive` tools to generate a google doc directly from a local asciidoc file.
 
 ## Prerequisites
 

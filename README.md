@@ -4,7 +4,7 @@
 ## Prerequisites
 
 * Install the latest version of Pandoc: https://pandoc.org/installing.html. On Fedora, install pandoc with `sudo dnf install pandoc`.
-* Install `gdrive`: https://github.com/prasmussen/gdrive. If you have `go` installed, run `go get github.com/prasmussen/gdrive`. 
+* Install `gdrive`: https://github.com/prasmussen/gdrive. If you have `go` installed, run `go get github.com/prasmussen/gdrive` to install. 
 * Give permission to `gdrive` to write to your google drive cloud folder.
 
 ## Installing

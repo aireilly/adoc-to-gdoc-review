@@ -13,7 +13,7 @@ from apiclient.http import MediaFileUpload
 
 def main(argv):
 
-    SCOPES = ['https://www.googleapis.com/auth/drive']
+    SCOPES = ['https://www.googleapis.com/auth/drive.file']
 
     try:
 

@@ -18,6 +18,6 @@ That's it! The script should now be ready to use.
 To generate a google doc review of any assembly or module, open a command prompt, and navigate to the folder that contains the asciidoc. Run the following command, passing in the relative name of the file to be generated, for example,
 
 ```
-gdoc-review modules/ztp-cluster-provisioning.adoc
+$ gdoc-review modules/ztp-cluster-provisioning.adoc
 ```  
 Follow the link to navigate to the google doc that have just been generated.

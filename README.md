@@ -12,3 +12,4 @@ That's it! The script should now be ready to use. To generate a google doc revie
 ```
 gdoc-review modules/ztp-cluster-provisioning.adoc
 ```  
+Follow the link to navigate to the google doc that have just been generated.

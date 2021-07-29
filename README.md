@@ -22,4 +22,4 @@ $ gdoc-review modules/ztp-cluster-provisioning.adoc
 ```  
 Follow the link to navigate to the google doc that has just been generated.
 
-*Note:* Every run of `gdoc-review` generates a new output file, previous output files are not overwritten. 
+**Note:** Every run of `gdoc-review` generates a new output file, previous output files are not overwritten. 

@@ -2,9 +2,6 @@
 
 `gdoc-review` is a simple script utility that utilizes `pandoc` and `gdrive` tools to generate a google doc directly from a local asciidoc file.
 
-[![asciicast](https://asciinema.org/a/iwqEczbZDyEly5KQsESxY3Taw.svg | width=100)](https://asciinema.org/a/iwqEczbZDyEly5KQsESxY3Taw)
-
-
 ## Prerequisites
 
 * Install Asciidoctor: https://docs.asciidoctor.org/asciidoctor/latest/install/linux-packaging/. On Fedora, run `sudo dnf install -y asciidoctor`.

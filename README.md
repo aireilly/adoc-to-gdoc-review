@@ -2,7 +2,7 @@
 
 `gdoc-review` is a simple script utility that utilizes `pandoc` and `gdrive` tools to generate a google doc directly from a local asciidoc file.
 
-[![asciicast](https://asciinema.org/a/iwqEczbZDyEly5KQsESxY3Taw.svg)](https://asciinema.org/a/iwqEczbZDyEly5KQsESxY3Taw)
+<img src="https://asciinema.org/a/iwqEczbZDyEly5KQsESxY3Taw.svg" width="300">
 
 ## Prerequisites
 

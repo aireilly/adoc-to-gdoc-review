@@ -12,7 +12,7 @@
 
 * Install Pandoc: https://pandoc.org/installing.html. On Fedora, run `sudo dnf install pandoc`.
 
-* Install `gio` CLI tool, on Fedora, run `sudo dnf install glib2-devel`
+* Install `gio` CLI tool. on Fedora, run `sudo dnf install glib2-devel`
 
 * Connect your Red Hat Google account to your online account in the Settings app in Fedora or RHEL. This mounts the Google Drive user account folder locally. 
 

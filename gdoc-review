@@ -6,8 +6,12 @@ GDRIVE_FOLDER=$(ls $GDRIVE_ROOT | head -1)
 
 # Check if ~/.gdoc-review exists
 if [ ! -f ~/.gdoc-review ]; then
-  echo "~/.gdoc-review attributes file not found 😥"
+  echo "~/.gdoc-review attributes file not found. Create it and try again 😥"
   exit 1
+fi
+
+if [ ! -d "$GDRIVE_ROOT" ]; then
+  echo "GDrive folder is not mounted. Mount it and try again 😓"
 fi
 
 if [ $# = 0 ]; then
@@ -43,4 +47,7 @@ else
 
   # Clean up
   rm $FILENAME.odt
+
 fi
+
+ exit 0

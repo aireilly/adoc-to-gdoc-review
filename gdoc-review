@@ -12,10 +12,12 @@ fi
 
 if [ ! -d "$GDRIVE_ROOT" ]; then
   echo "GDrive folder is not mounted. Mount it and try again 😓"
+  exit 1
 fi
 
 if [ $# = 0 ]; then
   echo "Provide the AsciiDoc filename as input..."
+  exit 1
 else
   FILENAME=$(basename "$1")
 
@@ -50,4 +52,4 @@ else
 
 fi
 
- exit 0
+exit 0

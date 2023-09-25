@@ -18,8 +18,6 @@
 
 ![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/2722198c-edb0-43be-a0f1-8c5646fd8e98)
 
-
-
 ## Installing
 
 * Copy the `gdoc-review` script to `~/bin`, and run `chmod a+x ~/bin/gdoc-review` to allow the script to be executed from anywhere in your file system.

@@ -45,7 +45,7 @@ else
   echo "Sent the review output to Google Drive. Open the output file using Google Docs 👀"
   echo "https://drive.google.com/drive/u/0/my-drive?q=type:document%20after:$(date "+%Y-%m-%d")%20parent:$GDRIVE_FOLDER"
 
-  xdg-open https://drive.google.com/drive/u/0/my-drive?q=type:document%20after:$(date "+%Y-%m-%d")%20parent:$GDRIVE_FOLDER
+  xdg-open https://drive.google.com/drive/u/0/search?q=type:document%20parent:$GDRIVE_FOLDER%20creator:me
 
   # Clean up
   rm $FILENAME.odt

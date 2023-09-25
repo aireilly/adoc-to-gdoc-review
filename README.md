@@ -4,7 +4,7 @@
 
 ## New in this version
 
-* Removed dependency on `gdrive` tool. 
+* Removed dependency on the `gdrive` tool. 
 
 ## Prerequisites
 

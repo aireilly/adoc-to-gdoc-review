@@ -1,10 +1,46 @@
 #!/usr/bin/bash
 
+GDRIVE_ROOT="/run/user/$(id -u)/gvfs/google-drive:host=redhat.com,user=$(whoami)"
+
+GDRIVE_FOLDER=$(ls $GDRIVE_ROOT | head -1)
+
+# Check if ~/.gdoc-review exists
+if [ ! -f ~/.gdoc-review ]; then
+  echo "~/.gdoc-review attributes file not found 😥"
+  exit 1
+fi
+
 if [ $# = 0 ]; then
-  echo "Provide the asciidoc filename as input..."
+  echo "Provide the AsciiDoc filename as input..."
 else
-  asciidoctor --backend docbook -a leveloffset=+1 --attribute=product-title="OpenShift Container Platform" --out-file - $1| pandoc --from docbook --to ODT --output $1.odt
-  gdrive import $1.odt | grep -oP "([A-Za-z0-9\-_]+[\d@]+[\w@]*|[\d@]+[A-Za-z0-9\-_]+[\w@]+[\-]*)[A-Za-z0-9\-_]+" |
-  echo "Your gdoc is available at https://docs.google.com/document/d/$(</dev/stdin)"
-  rm $1.odt
+  FILENAME=$(basename "$1")
+
+  FORMATTED_ATTRS=()
+
+  # Read the ~/.gdoc-review attributes 
+  while IFS= read -r LINE; do
+    if [[ -n "$LINE" && ! "$LINE" =~ ^\[ ]]; then
+      # Split into KEY and VALUE
+      KEY="${LINE%%=*}"
+      VALUE="${LINE#*=}"
+      # Account for attributes like toc that don't have a value
+      CLEANED_ATTR=$(echo "$KEY=$VALUE" | sed 's/=""//g')
+      # Append the attributes to the array
+      FORMATTED_ATTRS+=("-a" "$CLEANED_ATTR")
+    fi
+  done < ~/.gdoc-review # Asciidoctor attributes
+
+  #Convert the AsciiDoc
+  asciidoctor --backend docbook -a leveloffset=+1 "${FORMATTED_ATTRS[@]}" -o - "$1" | pandoc --from docbook --to ODT --output "$FILENAME.odt"
+
+  gio copy $FILENAME.odt $GDRIVE_ROOT/$GDRIVE_FOLDER
+
+  echo ""
+  echo "Sent the review output to Google Drive. Open the output file using Google Docs 👀"
+  echo "https://drive.google.com/drive/u/0/my-drive?q=type:document%20after:$(date "+%Y-%m-%d")%20parent:$GDRIVE_FOLDER"
+
+  xdg-open https://drive.google.com/drive/u/0/my-drive?q=type:document%20after:$(date "+%Y-%m-%d")%20parent:$GDRIVE_FOLDER
+
+  # Clean up
+  rm $FILENAME.odt
 fi

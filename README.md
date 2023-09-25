@@ -26,26 +26,22 @@
 
 ```ini
 [asciidoctor-attributes]
-toc=""
-allow-uri-read=""
-sectanchors=""
-product-title="OpenShift Container Platform"
-product-version="4.14"
-sno="single-node OpenShift"
-sno-caps="Single-node OpenShift"
-cgu-operator-first="Topology Aware Lifecycle Manager (TALM)"
-cgu-operator-full="Topology Aware Lifecycle Manager"
-cgu-operator="TALM"
-redfish-operator="Bare Metal Event Relay"
-rh-rhacm-first="Red Hat Advanced Cluster Management (RHACM)"
-rh-rhacm="RHACM"
-ztp="GitOps ZTP"
-ztp-first="GitOps zero touch provisioning (ZTP)" 
-op-system-first="Red Hat Enterprise Linux CoreOS (RHCOS)"
-op-system="RHCOS"
-imagesdir="images"
-icons="image"
-iconsdir="/home/aireilly/icons"
+product-title=OpenShift Container Platform
+product-version=4.14
+sno=single-node OpenShift
+sno-caps=Single-node OpenShift
+cgu-operator-first=Topology Aware Lifecycle Manager (TALM)
+cgu-operator-full=Topology Aware Lifecycle Manager
+cgu-operator=TALM
+redfish-operator=Bare Metal Event Relay
+rh-rhacm-first=Red Hat Advanced Cluster Management (RHACM)
+rh-rhacm=RHACM
+ztp=GitOps ZTP
+ztp-first=GitOps zero touch provisioning (ZTP) 
+op-system-first=Red Hat Enterprise Linux CoreOS (RHCOS)
+op-system=RHCOS
+icons=image
+iconsdir=/home/aireilly/icons
 ```
 
 That's it! The script should now be ready to use. 

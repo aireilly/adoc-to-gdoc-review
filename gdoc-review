@@ -29,15 +29,13 @@ else
       # Split into KEY and VALUE
       KEY="${LINE%%=*}"
       VALUE="${LINE#*=}"
-      # Account for attributes like toc that don't have a value
-      CLEANED_ATTR=$(echo "$KEY=$VALUE" | sed 's/=""//g')
       # Append the attributes to the array
-      FORMATTED_ATTRS+=("-a" "$CLEANED_ATTR")
+      FORMATTED_ATTRS+=("-a" "$KEY=$VALUE")
     fi
   done < ~/.gdoc-review # Asciidoctor attributes
 
   #Convert the AsciiDoc
-  asciidoctor --backend docbook -a leveloffset=+1 "${FORMATTED_ATTRS[@]}" -o - "$1" | pandoc --from docbook --to ODT --output "$FILENAME.odt"
+  asciidoctor --backend docbook -a leveloffset=+1 -a allow-uri-read "${FORMATTED_ATTRS[@]}" -o - "$1" | pandoc --from docbook --to ODT --output "$FILENAME.odt"
 
   gio copy $FILENAME.odt $GDRIVE_ROOT/$GDRIVE_FOLDER
 

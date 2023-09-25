@@ -4,7 +4,7 @@
 
 ## New in this version
 
-* Removed dependency on the `gdrive` tool. 
+* Removed dependency on the `gdrive` tool which cannot be used without setting up GCP IAM access to your GDrive account 😧
 
 ## Prerequisites
 

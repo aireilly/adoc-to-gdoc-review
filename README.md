@@ -15,7 +15,9 @@
 * Install `gio` CLI tool, on Fedora, run `sudo dnf install glib2-devel`
 
 * Connect your Red Hat Google account to your online account in the Settings app in Fedora or RHEL. This mounts the Google Drive user account folder locally. 
-![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/e257ff92-1dd3-4917-ae13-fb0a21c79367)
+
+![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/2722198c-edb0-43be-a0f1-8c5646fd8e98)
+
 
 
 ## Installing

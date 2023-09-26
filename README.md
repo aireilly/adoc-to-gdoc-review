@@ -8,6 +8,8 @@
 
 ## Prerequisites
 
+* **Remove the previous version of the script.**
+
 * Install [Asciidoctor](https://docs.asciidoctor.org/asciidoctor/latest/install/linux-packaging/). On Fedora, run `sudo dnf install -y asciidoctor`.
 
 * Install [Pandoc](https://pandoc.org/installing.html). On Fedora or RHEL, run `sudo dnf install pandoc`.

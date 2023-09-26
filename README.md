@@ -8,11 +8,11 @@
 
 ## Prerequisites
 
-* Install Asciidoctor: https://docs.asciidoctor.org/asciidoctor/latest/install/linux-packaging/. On Fedora, run `sudo dnf install -y asciidoctor`.
+* Install [Asciidoctor](https://docs.asciidoctor.org/asciidoctor/latest/install/linux-packaging/). On Fedora, run `sudo dnf install -y asciidoctor`.
 
-* Install Pandoc: https://pandoc.org/installing.html. On Fedora, run `sudo dnf install pandoc`.
+* Install [Pandoc](https://pandoc.org/installing.html). On Fedora or RHEL, run `sudo dnf install pandoc`.
 
-* Install `gio` CLI tool for working with Gvfs resources in mounted Google Drive folders. On Fedora, run `sudo dnf install glib2-devel`.
+* Install the `gio` CLI tool for working with [Gvfs](https://en.wikipedia.org/wiki/GVfs) resources. The script uses `gio` to work with files in mounted Google Drive folders. On Fedora or RHEL, run `sudo dnf install glib2-devel`.
 
 * Add `~/bin` to your system path. For example, add the following line to your `~/.bashrc`: 
 

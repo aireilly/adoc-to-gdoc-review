@@ -14,6 +14,12 @@
 
 * Install `gio` CLI tool. on Fedora, run `sudo dnf install glib2-devel`
 
+* Add `~/bin` to your system path. For example, in `~/.bashrc`, add the following line: 
+
+```bash
+export PATH=$PATH:~/bin
+```
+
 * Connect your Red Hat Google account to your online account in the Settings app in Fedora or RHEL. This mounts the Google Drive user account folder locally. 
 
 ![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/2722198c-edb0-43be-a0f1-8c5646fd8e98)
@@ -48,7 +54,7 @@ That's it! The script should now be ready to use.
 
 ## Getting started
 
-To generate a review doc of any assembly or module, open a shell prompt, and change to the folder that contains the AsciiDoc file. Run the following command, passing in the AsciiDoc file as input, for example:
+To generate a review doc of any assembly or module, open a shell prompt and run `gdoc-review <asciidoc_file>`. For example:
 
 ```
 $ gdoc-review modules/ztp-cluster-provisioning.adoc

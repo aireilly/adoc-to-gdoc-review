@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
-* **Remove the previous version of the script.**
+* **Remove the previous version of the script if you had it previously installed.**
 
 * Install [Asciidoctor](https://docs.asciidoctor.org/asciidoctor/latest/install/linux-packaging/). On Fedora, run `sudo dnf install -y asciidoctor`.
 

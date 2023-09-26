@@ -20,7 +20,7 @@
 export PATH=$PATH:~/bin
 ```
 
-* Connect your Red Hat Google account to your online account in the Settings app in Fedora or RHEL. This mounts your Google Drive folder locally. 
+* Connect your Red Hat Google account to your online account in the Settings app in Fedora or RHEL and select `Files`. This mounts your Google Drive folder locally. 
 
 ![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/2722198c-edb0-43be-a0f1-8c5646fd8e98)
 

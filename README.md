@@ -12,9 +12,9 @@
 
 * Install Pandoc: https://pandoc.org/installing.html. On Fedora, run `sudo dnf install pandoc`.
 
-* Install `gio` CLI tool. on Fedora, run `sudo dnf install glib2-devel`
+* Install `gio` CLI tool for working with Gvfs resources in mounted Google Drive folders. On Fedora, run `sudo dnf install glib2-devel`.
 
-* Add `~/bin` to your system path. For example, in `~/.bashrc`, add the following line: 
+* Add `~/bin` to your system path. For example, add the following line to your `~/.bashrc`: 
 
 ```bash
 export PATH=$PATH:~/bin
@@ -26,7 +26,7 @@ export PATH=$PATH:~/bin
 
 ## Installing
 
-* Copy the `gdoc-review` script to `~/bin`, and run `chmod a+x ~/bin/gdoc-review` to allow the script to be executed from anywhere in your file system.
+* Copy the `gdoc-review` script to `~/bin`, and run `chmod a+x ~/bin/gdoc-review` to allow the script to be executed from anywhere.
 
 * Create a `~/.gdoc-review` file populated with frequently used Asciidoctor variables. This ensures that variables are always resolved in the output. For example:
 
@@ -50,16 +50,16 @@ icons=image
 iconsdir=/home/aireilly/icons
 ```
 
-That's it! The script should now be ready to use. 
+That's it! The script should now be ready to use.
 
 ## Getting started
 
-To generate a review doc of any assembly or module, open a shell prompt and run `gdoc-review <asciidoc_file>`. For example:
+Open a shell prompt and run `gdoc-review <asciidoc_file>`. You can run the script for modules or assemblies. For example:
 
 ```
 $ gdoc-review modules/ztp-cluster-provisioning.adoc
 ```  
 
-Follow the link to open the generated Google doc.
+Follow the link to open the generated Google Doc. Open the output file in Google Docs to begin the review. 
 
 **Note:** Every run of `gdoc-review` overwrites the previous output. 

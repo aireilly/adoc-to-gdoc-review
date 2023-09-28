@@ -6,6 +6,8 @@
 
 * Removed dependency on the `gdrive` tool which cannot be used without setting up GCP IAM access to your GDrive account 😧
 
+* Configure commonly used Asciidoctor attributes in a simple `~/.gdoc-review` .ini file. 
+
 ## Prerequisites
 
 * **Delete the previous version of the script.**

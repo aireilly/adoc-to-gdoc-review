@@ -37,7 +37,7 @@ else
   #Convert the AsciiDoc
   asciidoctor --backend docbook -a leveloffset=+1 -a allow-uri-read "${FORMATTED_ATTRS[@]}" -o - "$1" | pandoc --from docbook --to ODT --output "$FILENAME.odt"
 
-  gio copy $FILENAME.odt $GDRIVE_ROOT/$GDRIVE_FOLDER
+  gio copy "$FILENAME.odt" $GDRIVE_ROOT/$GDRIVE_FOLDER
 
   echo ""
   echo "Sent the review output to Google Drive. Open the output file using Google Docs 👀"

@@ -29,6 +29,7 @@ export PATH=$PATH:~/bin
 ![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/2722198c-edb0-43be-a0f1-8c5646fd8e98)
 
 * Click on the Google account folder in the Files app to mount the drive.
+
 ![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/ef30f14c-9818-4be8-95a1-010037c8b0b4)
  
 

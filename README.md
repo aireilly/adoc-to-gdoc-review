@@ -30,8 +30,7 @@ export PATH=$PATH:~/bin
 
 * Click on the Google account folder in the Files app to mount the drive.
 
-![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/ef30f14c-9818-4be8-95a1-010037c8b0b4)
- 
+![image](https://github.com/aireilly/adoc-to-gdoc-review/assets/74046732/795897e5-0d7f-4359-824d-be5311b1f9cb)
 
 ## Installing
 
